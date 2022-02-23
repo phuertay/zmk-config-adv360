@@ -4,6 +4,63 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
+
+#define DEFAULT 0
+#define DEFAULT_HD 1
+#define AL_Q 2
+#define AL_W 3
+#define AL_E 4
+#define AL_R 5
+#define AL_O 6
+#define AL_P 7
+#define AL_SEMI 8
+#define AL_Z 9
+#define AL_X 10
+#define AL_C 11
+#define AL_M 12
+#define AL_FSLH 13
+#define AL_DOT 14
+#define PRPINY 15
+#define PINY 16
+#define NUM 17
+#define NUM_HD 18
+#define LCNUM 19
+#define FN 20
+#define NUM_L 21
+#define NUM_L_HD 22
+#define RCNUM_L 23
+#define FN_L 24
+#define SPFN 25
+#define SPFN_HD 26
+#define MOUSE 27
+#define FUNC 28
+#define FUNC_HD 29
+
+#define COMB_MS 96
+#define COMB_MS_FST 66
+
+#define COMB_LAY_QW DEFAULT DEFAULT_HD
+#define COMB_LAY_NV FN
+#define COMB_LAY_ALL COMB_LAY_QW COMB_LAY_NV
+
+#define ADAPTIVE_DELAY 335 
+#define MACRO_WAIT 12
+#define MACRO_WAIT_LONG 95
+
+
+// Sticky layer
+&sl {
+	release-after-ms = <1750>;
+};
+
+
+// Sticky key
+&sk {
+	release-after-ms = <1500>;
+};
+
+
+
 / {
 
     #include "combos.dtsi"
