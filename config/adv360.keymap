@@ -5,6 +5,8 @@
 #include <dt-bindings/zmk/backlight.h>
 
 / {
+
+    #include "combos.dtsi"
     behaviors {
       #include "macros.dtsi"
 
