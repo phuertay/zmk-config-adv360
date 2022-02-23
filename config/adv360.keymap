@@ -85,6 +85,10 @@
 													&kp BSPC &lts SPFN DEL					&lts SPFN ENTER &kp SPACE
 													&kp LALT &lt NUM KP_NUM		&lt NUM KP_NUM	&kp LWIN
 														&sl FUNC &lt NUM_L LANG4	&lt NUM_L LANG4 &sl FUNC
+
+&bootloader &rgb_ug RGB_MEFS_CMD 5
+&bl BL_INC &rgb_ug RGB_TOG
+&bl BL_DEC &bl BL_TOG
 			>;
 		};
 		
@@ -98,6 +102,7 @@
 									&kp GRAVE &kp BSPC				&lts SPFN_HD ENTER  &trans
 									&trans &kp DEL				&tog NUM_HD		&trans
 										&sl FUNC_HD &kp	C_AL_CALC	&kp C_AC_REFRESH &sl FUNC_HD
+&trans &trans &trans &trans &trans &trans 
 			>;
 		};
 
@@ -112,6 +117,7 @@
 	&trans &trans			&trans &trans
 										&trans &trans	&trans &trans
 										&trans &trans	&trans &trans
+&trans &trans &trans &trans &trans &trans 
 			>;
 		};
 	
@@ -126,6 +132,7 @@
 									&trans &trans			&trans &trans
 	 									&trans &trans	&trans &trans
 										&trans &trans	&trans &trans
+&trans &trans &trans &trans &trans &trans 
 			>;
 		};
 
@@ -140,6 +147,7 @@
 									&trans &trans			&trans &trans
 	 									&trans &trans	&trans &trans
 										&trans &trans	&trans &trans
+&trans &trans &trans &trans &trans &trans 
 			>;
 		};
 	
@@ -153,6 +161,7 @@
 									&trans &trans			&trans &trans
 										&trans &trans	&trans &trans
 										&trans &trans	&trans &trans
+&trans &trans &trans &trans &trans &trans 
 			>;
 		};
 	
@@ -166,6 +175,7 @@
 									&trans &trans			&trans &trans
 										&trans &trans	&trans &trans
 										&trans &trans	&trans &trans
+&trans &trans &trans &trans &trans &trans 
 			>;
 		};
 
@@ -180,6 +190,7 @@
 									&trans &trans			&trans &trans
 										&trans &trans	&trans &trans
 										&trans &trans	&trans &trans
+&trans &trans &trans &trans &trans &trans 
 			>;
 		};
 	
@@ -194,6 +205,7 @@
 									&trans &trans			&trans &trans
 	 									&trans &trans	&trans &trans
 										&trans &trans	&trans &trans
+&trans &trans &trans &trans &trans &trans 
 			>;
 		};
 
@@ -208,6 +220,7 @@
 									&trans &trans			&trans &trans
 	 									&trans &trans	&trans &trans
 										&trans &trans	&trans &trans
+&trans &trans &trans &trans &trans &trans 
 			>;
 		};
 
@@ -222,6 +235,7 @@
 									&trans &trans			&trans &trans
 	 									&trans &trans	&trans &trans
 										&trans &trans	&trans &trans
+&trans &trans &trans &trans &trans &trans 
 			>;
 		};
 		
@@ -236,6 +250,7 @@
 									&trans &trans			&trans &trans
 	 									&trans &trans	&trans &trans
 										&trans &trans	&trans &trans
+&trans &trans &trans &trans &trans &trans 
 			>;
 		};
 		
@@ -251,6 +266,7 @@
 									&trans &trans			&trans &trans
 	 									&trans &trans	&trans &trans
 										&trans &trans	&trans &trans
+&trans &trans &trans &trans &trans &trans 
 			>;
 		};
 
@@ -264,6 +280,7 @@
 									&trans &trans			&trans &trans
 										&trans &trans	&trans &trans
 										&trans &trans	&trans &trans
+&trans &trans &trans &trans &trans &trans 
 			>;
 		};
 	
@@ -277,6 +294,7 @@
 									&trans &trans			&trans &trans
 										&trans &trans	&trans &trans
 										&trans &trans	&trans &trans
+&trans &trans &trans &trans &trans &trans 
 			>;
 		};		
 
@@ -292,6 +310,7 @@
 									&trans &lts PINY DEL		&lts PINY ENTER &trans
 										&trans &trans		&trans &trans
 										&trans &trans		&trans &trans
+&trans &trans &trans &trans &trans &trans 
 			>;
 		};
 		
@@ -305,6 +324,7 @@
 														&trans &trans				&trans &trans
 															&trans &trans		&trans &trans
 															&trans &trans		&trans &trans
+&trans &trans &trans &trans &trans &trans 
 			>;
 		};
 
@@ -319,6 +339,7 @@
 																	&trans &mo FN			&mo FN &trans
 																		&trans &mo FN	&mo FN &trans
 																		&trans &mo FN	&mo FN &trans
+&trans &trans &trans &trans &trans &trans 
 			>;
 		};
 		
@@ -333,6 +354,7 @@
 														&kp H &lts SPFN_HD BSPC					&lts SPFN_HD  ENTER &lts SPFN_HD SPACE
 																		&trans &kp DEL		&to DEFAULT_HD	&trans
 																		&trans &mo FN		&mo FN &trans
+&trans &trans &trans &trans &trans &trans 
 			>;
 		};
 		
@@ -347,6 +369,7 @@
 															&trans &trans			&trans &trans
 																&trans &trans	&trans &trans
 																&trans &trans	&trans &trans
+&trans &trans &trans &trans &trans &trans 
 			>;
 		};
 		
@@ -360,6 +383,7 @@
 									&trans &trans			&trans &trans
 										&trans &trans	&trans &trans
 										&trans &trans	&trans &trans
+&trans &trans &trans &trans &trans &trans 
 			>;
 		};			
 		
@@ -375,6 +399,7 @@
 																		&trans &mo FN_L			&mo FN_L &trans
 																			&trans &mo FN_L	&mo FN_L &trans
 																			&trans &mo FN_L	&mo FN_L &trans
+&trans &trans &trans &trans &trans &trans 
 			>;
 		};
 	
@@ -390,6 +415,7 @@
 																		&trans &mo FN_L			&mo FN_L &trans
 																			&trans &mo FN_L	&mo FN_L &trans
 																			&trans &mo FN_L	&mo FN_L &trans
+&trans &trans &trans &trans &trans &trans 
 			>;
 		};
 		
@@ -403,6 +429,7 @@
 								&trans &trans			&trans &trans
 									&trans &trans	&trans &trans
 									&trans &trans	&trans &trans
+&trans &trans &trans &trans &trans &trans 
 			>;
 		};
 		
@@ -416,6 +443,7 @@
 													&trans &trans			&trans &trans
 														&trans &trans	&trans &trans
 														&trans &trans	&trans &trans
+&trans &trans &trans &trans &trans &trans 
 			>;
 		};
 			
@@ -432,6 +460,7 @@
 																&trans &lts MOUSE INS		&lts MOUSE ENTER &trans
 																	&trans &kp INT1		&kp INT1 &trans
 																	&trans &kp INT2		&kp INT2 &trans
+&trans &trans &trans &trans &trans &trans 
 			>;
 		};
 		
@@ -447,6 +476,7 @@
 																&trans &lts MOUSE INS		&lts MOUSE ENTER &trans
 																	&trans &kp INT1		&kp INT1 &trans
 																	&trans &kp INT2		&kp INT2 &trans
+&trans &trans &trans &trans &trans &trans 
 			>;
 		};
 		
@@ -460,6 +490,7 @@
 																&trans &trans			&trans &trans
 																	&trans &trans	&trans &trans
 																	&trans &trans	&trans &trans
+&trans &trans &trans &trans &trans &trans 
 			>;
 		};
 		
@@ -473,6 +504,7 @@
 														&kp C_AL_SELECT_TASK &kp INS			&kp C_AC_HOME &kp C_AC_BACK
 																	&tog SPFN	&tog NUM	&tog NUM   &tog SPFN
 																	&bootloader &tog NUM_L	&tog NUM_L &reset 
+&trans &trans &trans &trans &trans &trans 
 			>;
 		};
 
@@ -488,6 +520,7 @@
 														&kp C_AL_SELECT_TASK &kp INS					&kp C_AC_HOME &kp C_AC_BACK
 																	&tog SPFN_HD	&tog NUM_HD		&tog NUM_HD   &tog SPFN_HD
 																	&bootloader 	&tog NUM_L_HD		&tog NUM_L_HD &reset 
+&trans &trans &trans &trans &trans &trans 
 			>;
 		};
 
