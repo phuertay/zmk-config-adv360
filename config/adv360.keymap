@@ -504,7 +504,9 @@
 														&kp C_AL_SELECT_TASK &kp INS			&kp C_AC_HOME &kp C_AC_BACK
 																	&tog SPFN	&tog NUM	&tog NUM   &tog SPFN
 																	&bootloader &tog NUM_L	&tog NUM_L &reset 
-&trans &trans &trans &trans &trans &trans 
+&RGB_SAI &RGB_SAD 
+&RGB_BRI &RGB_HUI 
+&RGB_BRD &RGB_HUD 
 			>;
 		};
 
@@ -520,7 +522,9 @@
 														&kp C_AL_SELECT_TASK &kp INS					&kp C_AC_HOME &kp C_AC_BACK
 																	&tog SPFN_HD	&tog NUM_HD		&tog NUM_HD   &tog SPFN_HD
 																	&bootloader 	&tog NUM_L_HD		&tog NUM_L_HD &reset 
-&trans &trans &trans &trans &trans &trans 
+&RGB_SAI &RGB_SAD 
+&RGB_BRI &RGB_HUI 
+&RGB_BRD &RGB_HUD 
 			>;
 		};
 
