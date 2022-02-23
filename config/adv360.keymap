@@ -72,41 +72,421 @@
   keymap {
     compatible = "zmk,keymap";
 
-    default_layer {
-      bindings = <
-        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                                       &mo 3 &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
-        &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                                       &none &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
-        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none    &kp LCTRL &kp LALT &none &none &kp LGUI  &kp RCTRL                   &none &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
-        &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B        &none     &none     &kp HOME &none &none &kp PG_UP &none     &none            &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-        &mo 1     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT               &kp BKSP  &kp DEL   &kp END              &kp PG_DN &kp ENTER &kp SPACE               &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
-        >;
-    };
-    keypad {
-      bindings = <
-        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                                       &mo 3 &kp N6 &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
-        &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                                        &none &kp Y  &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp KP_MINUS    &kp BSLH
-        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none          &kp LCTRL &kp LALT &none &none &kp LGUI  &kp RCTRL            &none &kp H  &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp KP_PLUS     &kp SQT
-        &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B        &none    &none     &kp HOME &none &none &kp PG_UP &none     &none            &kp N  &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &kp RSHFT
-        &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT               &kp BKSP &kp DEL   &kp END              &kp PG_DN &kp ENTER &kp KP_N0               &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT         &mo 2
-      >;
-    };
-    fn {
-      bindings = <
-        &kp F1  &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog 1                                                          &mo 3 &kp F7  &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-        &trans  &trans &trans &trans &trans &trans  &none                                                          &none &trans  &trans &trans &trans  &trans  &trans
-        &trans  &trans &trans &trans &trans &trans  &none        &trans &trans &none &none &trans &trans           &none &trans  &trans &trans &trans  &trans  &trans
-        &trans  &trans &trans &trans &trans &trans        &none  &none  &trans &none &none &trans &none  &none            &trans &trans &trans &trans  &trans  &trans
-        &trans  &trans &trans &trans &trans               &trans &trans &trans             &trans &trans &trans                  &trans &trans &trans  &trans  &trans
-      >;
-    };
-    mod {
-      bindings = <
-        &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                                                                                  &trans        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none
-        &none &none        &none        &none        &none        &none        &bootloader                                                                                            &bootloader   &none        &none        &none        &none        &none        &none
-        &none &none        &none        &none        &none        &none        &rgb_ug RGB_MEFS_CMD 5    &bt BT_CLR &bt BT_CLR &none &none &bt BT_CLR &bt BT_CLR         &rgb_ug RGB_MEFS_CMD 5    &none        &none        &none        &none        &none        &none
-        &none &none        &none        &none        &none        &none                   &none           &none      &none     &none &none &none      &none      &none                   &none        &none        &none        &none        &none        &none
-        &none &none        &none        &bl BL_INC   &bl BL_DEC                           &rgb_ug RGB_TOG &bl BL_TOG &none                 &none      &bl BL_TOG &rgb_ug RGB_TOG                      &bl BL_INC   &bl BL_DEC   &none        &none        &none
-      >;
-    };
-  };
+		default_layer {
+			bindings = <
+&kp ESC   		&fn F7 N1	  &fn F5 N2		  &fn F3 N3	  &fn F1 N4	   &fn F9 N5						&fn F8 N6	 &fn F10 N7	  &fn F2 N8		  &fn F4 N9		&fn F6 N0	   &fn F11 RBKT
+&kp TAB   		&kp Q		  &kp W			  &kp E		  &kp R		   &hmss LWIN T						&hmss RWIN Y		 &kp U		  &kp I			  &kp O			&kp P		   &fn F12 LBKT
+&cesc LCTRL ESC &kp A		  &kp S			  &kp D		  &kp F		   &hms RALT G							&hms RALT H		 &kp J		  &kp K			  &kp L			&kp SEMI	   &kp SQT
+&hms LSHFT KP_NUM		&kp Z		  &hms LALT X	  &hmf LSHFT C &hms LCTRL V &lt NUM B						&lt NUM N &hms RCTRL M &hmf RSHFT COMMA &hms LALT DOT &kp FSLH	   &hms RSHFT LANG4
+							&hm TILDE GRAVE &hm RALT BSLH									    							  &kp MINUS		  &kp EQUAL
+													&kp BSPC &lts SPFN DEL					&lts SPFN ENTER &kp SPACE
+													&kp LALT &lt NUM KP_NUM		&lt NUM KP_NUM	&kp LWIN
+														&sl FUNC &lt NUM_L LANG4	&lt NUM_L LANG4 &sl FUNC
+			>;
+		};
+		
+		default_layer_hd {
+			bindings = <
+&trans	&fn F9 N1  &fn F3 N2  &fn F1 N3 &fn F5 N4  &fn F7 N5			&fn F6 N6 &fn F2 N7 &fn F10 N8  &fn F4 N9	&fn F8 N0   &fn F11 DEL
+&trans	&ak_Q &ak_W  &ak_E  &ak_R  &trans								&trans &trans &trans &ak_O  &ak_P  &trans
+&trans	&trans &trans &trans &trans &trans								&trans &trans &trans &trans &ak_SEMI &trans
+&trans	&ak_Z &hms_m_x LALT 0  &hms_m_c LSHFT 0 &trans &lt NUM_HD B								&lt NUM_HD N &hms_m_m RCTRL 0 &hms RSHFT COMMA &hms_m_dot LALT 0 &ak_FSLH &trans
+				    &hm TILDE RBKT &hm H BSLH												   &trans &trans
+									&kp GRAVE &kp BSPC				&lts SPFN_HD ENTER  &trans
+									&trans &kp DEL				&tog NUM_HD		&trans
+										&sl FUNC_HD &kp	C_AL_CALC	&kp C_AC_REFRESH &sl FUNC_HD
+			>;
+		};
+
+
+		adaptive_q {
+			bindings = <
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&trans &m_dqt &m_dge  &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+				   &trans &trans										   &trans &trans
+	&trans &trans			&trans &trans
+										&trans &trans	&trans &trans
+										&trans &trans	&trans &trans
+			>;
+		};
+	
+
+		adaptive_w {
+			bindings = <
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&trans &kp W  &m_dkk &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+				   &trans &trans										   &trans &trans
+									&trans &trans			&trans &trans
+	 									&trans &trans	&trans &trans
+										&trans &trans	&trans &trans
+			>;
+		};
+
+	
+		adaptive_e {
+			bindings = <
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&kp G  &m_ddw &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &kp B  &trans
+				   &trans &trans										   &trans &trans
+									&trans &trans			&trans &trans
+	 									&trans &trans	&trans &trans
+										&trans &trans	&trans &trans
+			>;
+		};
+	
+		adaptive_r {
+			bindings = <
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&trans &trans &kp C  &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+				   &trans &trans										   &trans &trans
+									&trans &trans			&trans &trans
+										&trans &trans	&trans &trans
+										&trans &trans	&trans &trans
+			>;
+		};
+	
+		adaptive_o {
+			bindings = <
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&trans &trans &trans &trans &trans						&trans &kp M  &m_mk  &trans &kp L  &trans
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+				   &trans &trans										   &trans &trans
+									&trans &trans			&trans &trans
+										&trans &trans	&trans &trans
+										&trans &trans	&trans &trans
+			>;
+		};
+
+		
+		adaptive_p {
+			bindings = <
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &kp O  &trans &trans
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+				   &trans &trans										   &trans &trans
+									&trans &trans			&trans &trans
+										&trans &trans	&trans &trans
+										&trans &trans	&trans &trans
+			>;
+		};
+	
+
+		adaptive_SEMI {
+			bindings = <
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&m_dga &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+				   &trans &trans										   &trans &trans
+									&trans &trans			&trans &trans
+	 									&trans &trans	&trans &trans
+										&trans &trans	&trans &trans
+			>;
+		};
+
+
+		adaptive_z {
+			bindings = <
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&trans &trans &m_dgc &trans &trans						&trans &trans &trans &trans &kp B  &trans
+				   &trans &trans										   &trans &trans
+									&trans &trans			&trans &trans
+	 									&trans &trans	&trans &trans
+										&trans &trans	&trans &trans
+			>;
+		};
+
+
+		adaptive_x {
+			bindings = <
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&m_dvy &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+				   &trans &trans										   &trans &trans
+									&trans &trans			&trans &trans
+	 									&trans &trans	&trans &trans
+										&trans &trans	&trans &trans
+			>;
+		};
+		
+		
+		adaptive_c {
+			bindings = <
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&kp G  &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+				   &trans &trans										   &trans &trans
+									&trans &trans			&trans &trans
+	 									&trans &trans	&trans &trans
+										&trans &trans	&trans &trans
+			>;
+		};
+		
+			
+
+		adaptive_m {
+			bindings = <
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&kp G  &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &kp J  &trans
+				   &trans &trans										   &trans &trans
+									&trans &trans			&trans &trans
+	 									&trans &trans	&trans &trans
+										&trans &trans	&trans &trans
+			>;
+		};
+
+		adaptive_fslh {
+			bindings = <
+&kp ESC	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&m_dba &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&trans &trans &m_dbc &trans &trans						&trans &m_djm &trans &trans &trans &trans
+				   &trans &trans										   &trans &trans
+									&trans &trans			&trans &trans
+										&trans &trans	&trans &trans
+										&trans &trans	&trans &trans
+			>;
+		};
+	
+		adaptive_dot {
+			bindings = <
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans	
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans	&trans &trans &trans &trans &trans						&trans &trans &trans &trans &kp L  &trans
+				   &trans &trans										   &trans &trans
+									&trans &trans			&trans &trans
+										&trans &trans	&trans &trans
+										&trans &trans	&trans &trans
+			>;
+		};		
+
+
+		
+		pre_pinyin_layer {
+			bindings = <
+&to DEFAULT &trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans		&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans		&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans		&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+				   &trans &trans												  &trans &trans
+									&trans &lts PINY DEL		&lts PINY ENTER &trans
+										&trans &trans		&trans &trans
+										&trans &trans		&trans &trans
+			>;
+		};
+		
+		pinyin_layer {
+			bindings = <
+&trans &trans	 &trans	   &trans		&trans		 &trans								&trans		&trans		 &trans		  &trans	 &trans		   &trans
+&trans &kp N1	 &kp N2	   &kp N3		&kp N4		 &trans								&kp LA(TAB) &kp PG_UP	 &kp UP 	  &kp PG_DN  &kp TAB	   &trans
+&trans &kp N1	 &kp N2	   &kp N3		&kp N4		 &trans								&kp HOME 	&kp LEFT	 &kp DOWN     &kp RIGHT  &hm RCTRL END &kp NON_US_BSLH
+&trans &trans	 &trans	   &trans		&trans		 &trans								&kp BSPC	&kp RC(BSPC) &kp RC(DEL)  &kp ESC	 &kp ENTER	   &trans
+				 &trans	   &trans																	 			 &kp RC(FSLH) &kp SPACE		 
+														&trans &trans				&trans &trans
+															&trans &trans		&trans &trans
+															&trans &trans		&trans &trans
+			>;
+		};
+
+		
+		numeric_layer {
+			bindings = <
+&to DEFAULT	&fm F19 F7		 &fm F17 F5 &fm F15 F3   &fm F13 F1	  &fm F21 F9	 				&fm F20 F8	&fm F14 F2	  &kp KP_DIVIDE &kp KP_MULTIPLY &kp GRAVE		 &fm F23 F11
+&trans		&kp TAB			 &kp PG_UP  &kp UP       &kp PG_DN	  &kp LA(TAB)					&kp LA(N3)	&fm F7 LS(N1) &fm F8 LS(N6) &fm F9 LS(N5)	&fm F12 KP_MINUS &fm F24 F12
+&trans		&lts LCNUM ENTER &kp LEFT   &kp DOWN	 &kp RIGHT	  &kp LA(N1)					&kp RC(INS)	&fm F4 LS(N9) &fm F5 LS(N2) &fm F6 LS(N0)	&kp KP_PLUS		 &trans
+&trans		&trans			 &kp ESC	&kp RC(DEL)  &kp RC(BSPC) &kp LA(N2)					&kp	LS(INS)	&fm F1 LS(N4) &fm F2 LS(N8) &fm F3 LS(N3)	&kp ENTER		 &trans
+							 &kp SPACE  &kp RC(FSLH)												  					  &fm F10 LS(N7) &fm F11 KP_DOT
+																	&trans &mo FN			&mo FN &trans
+																		&trans &mo FN	&mo FN &trans
+																		&trans &mo FN	&mo FN &trans
+			>;
+		};
+		
+
+		numeric_layer_hd {
+			bindings = <
+&to DEFAULT_HD	&fm F21 F9	 &fm F15 F3	   &fm F13 F1	 &fm F17 F5		&fm F19 F7	 	  				&kp N7	&fm F14 F2	  &kp KP_DIVIDE &kp KP_MULTIPLY &kp GRAVE		 &fm F23 F11
+&trans		&kp TAB			 &kp PG_UP  &kp UP       &kp PG_DN	  &kp LA(TAB)					&kp LA(N3)	&fm F7 LS(N5) &fm F8 LS(N0) &fm F9 LS(N1)	&fm F12 KP_MINUS &fm F24 F12
+&trans		&lts LCNUM ENTER &kp LEFT   &kp DOWN	 &kp RIGHT	  &kp LA(N1)					&kp RC(INS)	&fm F4 LS(N9) &fm F5 LS(N4) &fm F6 LS(N6)	&kp KP_PLUS		 &trans
+&trans		&trans			 &kp ESC	&kp RC(DEL)  &kp RC(BSPC) &kp LA(N2)					&kp	LS(INS)	&fm F1 LS(N3) &fm F2 LS(N7) &fm F3 LS(N2)	&kp ENTER		 &trans
+							 &kp RBKT	&hm H RC(X)												  					  &fm F10 LS(N8) &fm F11 KP_DOT
+														&kp H &lts SPFN_HD BSPC					&lts SPFN_HD  ENTER &lts SPFN_HD SPACE
+																		&trans &kp DEL		&to DEFAULT_HD	&trans
+																		&trans &mo FN		&mo FN &trans
+			>;
+		};
+		
+
+		left_ctrl_num_layer {
+			bindings = <
+&trans &trans &trans		&trans		 &trans		   &trans						&trans &trans &trans &trans &trans &trans
+&trans &trans &kp LA(PG_UP)	&kp RC(UP)	 &kp LA(PG_DN) &kp LS(LA(TAB))				&trans &trans &trans &trans &trans &trans
+&trans &trans &kp RC(LEFT)	&kp RC(DOWN) &kp RC(RIGHT) &trans &trans				&trans &trans &trans &trans &trans &trans
+&trans &trans &trans		&trans		 &trans		   &trans						&trans &trans &trans &trans &trans &trans
+		 	  &trans		&trans															  	  &trans &trans
+															&trans &trans			&trans &trans
+																&trans &trans	&trans &trans
+																&trans &trans	&trans &trans
+			>;
+		};
+		
+		fn_layer {
+			bindings = <
+&trans &trans  &trans  &trans  &trans  &trans					&trans &trans	  &trans	  &trans	  &trans	  &trans
+&trans &kp F24 &kp F19 &kp F20 &kp F21 &trans					&trans &fm F19 F7 &fm F20 F8  &fm F21 F9  &fm F24 F12 &trans
+&trans &trans  &kp F16 &kp F17 &kp F18 &trans					&trans &fm F16 F4 &fm F17 F5  &fm F18 F6  &trans	  &trans
+&trans &trans  &kp F13 &kp F14 &kp F15 &trans		   			&trans &fm F13 F1 &fm F14 F2  &fm F15 F3  &trans	  &trans
+			   &kp F23 &kp F22													  &fm F22 F10 &fm F23 F11	
+									&trans &trans			&trans &trans
+										&trans &trans	&trans &trans
+										&trans &trans	&trans &trans
+			>;
+		};			
+		
+
+		
+		numeric_layer_left {
+			bindings = <
+&to DEFAULT	&kp GRAVE		 &kp KP_MULTIPLY &kp KP_DIVIDE	&fm F14 F2	  &fm F21 F9 				&fm F20 F8	&fm F16 F4	 &fm F14 F2	 &fm F16 F4	  &fm F18 F6		 &fm F23 F11
+&trans		&fm F12 KP_MINUS &fm F9 LS(N5)	 &fm F8 LS(N6)	&fm F7 LS(N1) &kp LA(TAB)				&kp LA(TAB)	&kp PG_UP	 &kp UP		 &kp PG_DN	  &kp TAB			 &fm F24 F12
+&trans		&kp KP_PLUS		 &fm F6 LS(N0)	 &fm F5 LS(N2)	&fm F4 LS(N9) &kp RC(INS)				&kp LA(N1)	&kp LEFT	 &kp DOWN	 &kp RIGHT	  &lts RCNUM_L ENTER &trans
+&trans		&kp ENTER		 &fm F3 LS(N3)	 &fm F2 LS(N8)	&fm F1 LS(N4) &kp LS(INS)				&kp LA(N2)  &kp RC(BSPC) &kp RC(DEL) &kp ESC	  &trans			 &trans
+							 &fm F11 KP_DOT  &fm F10 LS(N7) 													  					 &kp SPACE	 &kp RC(FSLH)
+																		&trans &mo FN_L			&mo FN_L &trans
+																			&trans &mo FN_L	&mo FN_L &trans
+																			&trans &mo FN_L	&mo FN_L &trans
+			>;
+		};
+	
+
+
+		numeric_layer_left_hd {
+			bindings = <
+&to DEFAULT	&kp GRAVE		 &kp KP_MULTIPLY &kp KP_DIVIDE	&fm F17 F5	  &fm F19 F7 				&fm F18 F6 &fm F14 F2	 &fn F10 N0 &fm F16 F4	 &fm F20 F8		 &fm F23 F11
+&trans		&fm F12 KP_MINUS &fm F9 LS(N1)	 &fm F8 LS(N0)	&fm F7 LS(N5) &kp LA(TAB)				&kp LA(TAB)	&kp PG_UP	 &kp UP		 &kp PG_DN	  &kp TAB			 &fm F24 F12
+&trans		&kp KP_PLUS		 &fm F6 LS(N6)	 &fm F5 LS(N4)	&fm F4 LS(N9) &kp RC(INS)				&kp LA(N1)	&kp LEFT	 &kp DOWN	 &kp RIGHT	  &lts RCNUM_L ENTER &trans
+&trans		&kp ENTER		 &fm F3 LS(N2)	 &fm F2 LS(N7)	&fm F1 LS(N3) &kp LS(INS)				&kp LA(N2)  &kp RC(BSPC) &kp RC(DEL) &kp ESC	  &trans			 &trans
+							 &fm F11 KP_DOT  &fm F10 LS(N7) 													  					 &kp SPACE	 &kp RC(FSLH)
+																		&trans &mo FN_L			&mo FN_L &trans
+																			&trans &mo FN_L	&mo FN_L &trans
+																			&trans &mo FN_L	&mo FN_L &trans
+			>;
+		};
+		
+		right_ctrl_num_layer {
+			bindings = <
+&trans &trans &trans &trans &trans &trans					&trans			&trans		  &trans	   &trans		 &trans	&trans
+&trans &trans &trans &trans &trans &trans					&kp LS(LA(TAB)) &kp LA(PG_UP) &kp RC(UP)   &kp LA(PG_DN) &trans &trans
+&trans &trans &trans &trans &trans &trans					&trans			&kp RC(LEFT)  &kp RC(DOWN) &kp RC(RIGHT) &trans &trans
+&trans &trans &trans &trans &trans &trans					&trans			&trans		  &trans	   &trans		 &trans	&trans
+		 	  &trans &trans																  &trans	   &trans
+								&trans &trans			&trans &trans
+									&trans &trans	&trans &trans
+									&trans &trans	&trans &trans
+			>;
+		};
+		
+		fn_layer_left {
+			bindings = <
+&trans &trans	   &trans	   &trans	   &trans	  &trans					&trans &trans  &trans  &trans  &trans  &trans
+&trans &fm F24 F12 &fm F21 F9  &fm F20 F8  &fm F19 F7 &trans					&trans &kp F19 &kp F20 &kp F21 &kp F24 &trans
+&trans &trans	   &fm F18 F6  &fm F17 F5  &fm F16 F4 &trans					&trans &kp F16 &kp F17 &kp F18 &trans  &trans
+&trans &trans	   &fm F15 F3  &fm F14 F2  &fm F13 F1 &trans		   			&trans &kp F13 &kp F14 &kp F15 &trans  &trans
+				   &fm F23 F11 &fm F22 F10 													   &kp F22 &kp F23	
+													&trans &trans			&trans &trans
+														&trans &trans	&trans &trans
+														&trans &trans	&trans &trans
+			>;
+		};
+			
+
+				
+		spacefn_layer {
+			bindings = <
+// &to DEFAULT	&fm F13 F1	   &fm F14 F2 &fm F15 F3   &fm F16 F4	 &fm F17 F5						  &fm F18 F6  &fm F19 F7   &fm F20 F8   &fm F21 F9 &fm F22 F10	 &fm F23 F11
+&to DEFAULT	&fm F19 F7	   &fm F17 F5 &fm F15 F3   &fm F13 F1	 &fm F21 F9						&fm F20 F8	  &fm F22 F10  &fm F14 F2   &fm F16 F4 &fm F18 F6    &fm F23 F11
+&trans 		&kp TAB		   &kp PG_UP  &kp UP       &kp PG_DN	 &kp LA(TAB)					&kp LA(TAB) &kp PG_UP	   &kp UP 	    &kp PG_DN  &kp TAB		 &fm F24 F12
+&trans 		&hm RCTRL HOME &kp LEFT   &kp DOWN     &kp RIGHT	 &kp END						&kp HOME 	  &kp LEFT	   &kp DOWN     &kp RIGHT  &hm RCTRL END &kp NON_US_BSLH
+&trans		&kp ENTER	   &hms LALT ESC	&hm LSHFT RC(DEL)  &hms RCTRL RC(BSPC)  &kp BSPC			&kp BSPC	  &hms RCTRL RC(BSPC) &hm LSHFT RC(DEL)  &hms LALT ESC	   &kp ENTER	 &trans
+						   &kp SPACE  &kp RC(FSLH)															 			   &kp RC(FSLH) &kp DEL
+																&trans &lts MOUSE INS		&lts MOUSE ENTER &trans
+																	&trans &kp INT1		&kp INT1 &trans
+																	&trans &kp INT2		&kp INT2 &trans
+			>;
+		};
+		
+
+
+		spacefn_layer_hd {
+			bindings = <
+&to DEFAULT	&fm F21 F9	 &fm F15 F3	  &fm F13 F1	&fm F17 F5 	&fm F19 F7	    				 &fm F18 F6  &fm F14 F2	 &fm F22 F10 	  &fm F16 F4 &fm F20 F8    &fm F23 F11
+&trans 		&kp TAB		   &kp PG_UP  &kp UP       &kp PG_DN	 &kp LA(TAB)					&kp LA(TAB) &kp PG_UP	   &kp UP 	    &kp PG_DN  &kp TAB		 &fm F24 F12
+&trans 		&hm RCTRL HOME &kp LEFT   &kp DOWN     &kp RIGHT	 &kp END						&kp HOME 	  &kp LEFT	   &kp DOWN     &kp RIGHT  &hm RCTRL END &kp NON_US_BSLH
+&trans		&kp ENTER	   &hms LALT ESC	&hm LSHFT RC(DEL)  &hms RCTRL RC(BSPC)  &kp BSPC			&kp BSPC	  &hms RCTRL RC(BSPC) &hm LSHFT RC(DEL)  &hms LALT ESC	   &kp ENTER	 &trans
+						   &kp SPACE  &kp RC(FSLH)															 			   &kp RC(FSLH) &kp DEL
+																&trans &lts MOUSE INS		&lts MOUSE ENTER &trans
+																	&trans &kp INT1		&kp INT1 &trans
+																	&trans &kp INT2		&kp INT2 &trans
+			>;
+		};
+		
+		mouse_layer {
+			bindings = <
+&to DEFAULT	&trans &trans			&trans			 &trans			   &trans					&trans &trans			&trans		  	 &trans			   &trans &trans
+&trans 		&trans &trans			&kp LG(RC(UP))	 &trans			   &trans					&trans &trans			&kp RG(RC(UP))   &trans			   &trans &trans
+&trans 		&trans &kp LG(RC(LEFT)) &kp LG(RC(DOWN)) &kp LG(RC(RIGHT)) &trans					&trans &kp RG(RC(LEFT))	&kp RG(RC(DOWN)) &kp RG(RC(RIGHT)) &trans &trans
+&trans 		&trans &trans			&trans			 &trans			   &trans					&trans &trans			&trans		  	 &trans			   &trans &trans
+									&kp LG(RC(DOWN)) &kp LG(RC(UP))														&kp RG(RC(DOWN)) &kp RG(RC(UP))
+																&trans &trans			&trans &trans
+																	&trans &trans	&trans &trans
+																	&trans &trans	&trans &trans
+			>;
+		};
+		
+		function_layer {
+			bindings = <
+&to DEFAULT		  &to DEFAULT_HD	&none		 &none		&tog PRPINY	  &tog MOUSE				&out OUT_TOG	 &bt BT_SEL 0  &bt BT_SEL 1	 &bt BT_SEL 2	    &bt BT_SEL 3	&bt BT_CLR
+&m_hd_on		  &kp KP_NUM    &kp CAPS	 &kp SLCK 	  &kp PSCRN		  &kp PAUSE_BREAK			&kp KP_NUM		 &kp CAPS	   &kp SLCK      &kp PSCRN			&kp PAUSE_BREAK &kp K_PWR
+&kp C_VOL_DN	  &kp C_VOL_UP	&kp C_MUTE 	 &kp C_PP	  &kp C_PREV	  &kp C_NEXT 				&kp C_VOL_DN	 &kp C_VOL_UP  &kp C_MUTE	 &kp C_PP		    &kp C_PREV	    &kp C_NEXT
+&kp C_AL_CONTACTS &kp C_AL_MAIL &kp C_AL_CCC &kp C_AL_CAL &kp C_AL_WWW	  &kp C_AC_SEARCH			&kp C_AC_REFRESH &kp C_AC_STOP &kp C_AL_CALC &kp C_AC_FAVORITES &kp C_AC_SEND   &kp C_AL_MY_COMPUTER
+								&kp C_BRI_DN &kp C_BRI_UP																		   &kp C_AC_BACK &kp C_AC_FORWARD
+														&kp C_AL_SELECT_TASK &kp INS			&kp C_AC_HOME &kp C_AC_BACK
+																	&tog SPFN	&tog NUM	&tog NUM   &tog SPFN
+																	&bootloader &tog NUM_L	&tog NUM_L &reset 
+			>;
+		};
+
+
+		
+		function_layer_hd {
+			bindings = <
+&to DEFAULT_HD		  &to DEFAULT &none	 &none   &tog PRPINY	  &tog MOUSE				&out OUT_TOG	 &bt BT_SEL 0  &bt BT_SEL 1	 &bt BT_SEL 2	    &bt BT_SEL 3	&bt BT_CLR
+&m_hd_off	  &kp KP_NUM    &kp CAPS	 &kp SLCK 	  &kp PSCRN		  &kp PAUSE_BREAK			&kp KP_NUM		 &kp CAPS	   &kp SLCK      &kp PSCRN			&kp PAUSE_BREAK &kp K_PWR
+&kp C_VOL_DN	  &kp C_VOL_UP	&kp C_MUTE 	 &kp C_PP	  &kp C_PREV	  &kp C_NEXT 				&kp C_VOL_DN	 &kp C_VOL_UP  &kp C_MUTE	 &kp C_PP		    &kp C_PREV	    &kp C_NEXT
+&kp C_AL_CONTACTS &kp C_AL_MAIL &kp C_AL_CCC &kp C_AL_CAL &kp C_AL_WWW	  &kp C_AC_SEARCH			&kp C_AC_SEARCH &kp C_AC_STOP &kp C_AL_CALC &kp C_AC_FAVORITES &kp C_AC_SEND   &kp C_AL_MY_COMPUTER
+								&kp C_BRI_DN &kp C_BRI_UP																		   &kp C_AC_BACK &kp C_AC_FORWARD
+														&kp C_AL_SELECT_TASK &kp INS					&kp C_AC_HOME &kp C_AC_BACK
+																	&tog SPFN_HD	&tog NUM_HD		&tog NUM_HD   &tog SPFN_HD
+																	&bootloader 	&tog NUM_L_HD		&tog NUM_L_HD &reset 
+			>;
+		};
+
+	};
 };
