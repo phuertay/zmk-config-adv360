@@ -35,6 +35,9 @@
 #define MOUSE 27
 #define FUNC 28
 #define FUNC_HD 29
+#define MOD 30
+
+
 
 #define COMB_MS 96
 #define COMB_MS_FST 66
