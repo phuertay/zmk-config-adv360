@@ -86,7 +86,10 @@
 &bootloader &rgb_ug RGB_MEFS_CMD 5
 &bl BL_INC &rgb_ug RGB_TOG
 &bl BL_DEC &bl BL_TOG
-&kp C_AC_SEARCH			&kp C_AC_REFRESH
+&to DEFAULT	&trans &trans &trans &trans 		&to DEFAULT
+
+
+
 			>;
 		};
 		
@@ -101,7 +104,7 @@
 									&trans &kp DEL				&tog NUM_HD		&trans
 										&sl FUNC_HD &kp	C_AL_CALC	&kp C_AC_REFRESH &sl FUNC_HD
 &trans &trans &trans &trans &trans &trans 
-&trans &trans 
+&to DEFAULT_HD	 &trans &tog NUM_HD &tog NUM_HD &trans 		&to DEFAULT_HD 
 			>;
 		};
 
@@ -116,7 +119,7 @@
 	&trans &trans			&trans &trans
 										&trans &trans	&trans &trans
 										&trans &trans	&trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans 
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
 			>;
 		};
 	
@@ -131,7 +134,7 @@
 									&trans &trans			&trans &trans
 	 									&trans &trans	&trans &trans
 										&trans &trans	&trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans 
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
 			>;
 		};
 
@@ -146,7 +149,7 @@
 									&trans &trans			&trans &trans
 	 									&trans &trans	&trans &trans
 										&trans &trans	&trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans 
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
 			>;
 		};
 	
@@ -160,7 +163,7 @@
 									&trans &trans			&trans &trans
 										&trans &trans	&trans &trans
 										&trans &trans	&trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans 
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
 			>;
 		};
 	
@@ -174,7 +177,7 @@
 									&trans &trans			&trans &trans
 										&trans &trans	&trans &trans
 										&trans &trans	&trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans 
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
 			>;
 		};
 
@@ -189,7 +192,7 @@
 									&trans &trans			&trans &trans
 										&trans &trans	&trans &trans
 										&trans &trans	&trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans 
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
 			>;
 		};
 	
@@ -204,7 +207,7 @@
 									&trans &trans			&trans &trans
 	 									&trans &trans	&trans &trans
 										&trans &trans	&trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans 
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
 			>;
 		};
 
@@ -219,7 +222,7 @@
 									&trans &trans			&trans &trans
 	 									&trans &trans	&trans &trans
 										&trans &trans	&trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans 
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
 			>;
 		};
 
@@ -234,7 +237,7 @@
 									&trans &trans			&trans &trans
 	 									&trans &trans	&trans &trans
 										&trans &trans	&trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans 
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
 			>;
 		};
 		
@@ -249,7 +252,7 @@
 									&trans &trans			&trans &trans
 	 									&trans &trans	&trans &trans
 										&trans &trans	&trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans 
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
 			>;
 		};
 		
@@ -265,7 +268,7 @@
 									&trans &trans			&trans &trans
 	 									&trans &trans	&trans &trans
 										&trans &trans	&trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans 
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
 			>;
 		};
 
@@ -279,7 +282,7 @@
 									&trans &trans			&trans &trans
 										&trans &trans	&trans &trans
 										&trans &trans	&trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans 
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
 			>;
 		};
 	
@@ -293,7 +296,7 @@
 									&trans &trans			&trans &trans
 										&trans &trans	&trans &trans
 										&trans &trans	&trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans 
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
 			>;
 		};		
 
@@ -301,7 +304,7 @@
 		
 		pre_pinyin_layer {
 			bindings = <
-&to DEFAULT &trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
 &trans		&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
 &trans		&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
 &trans		&trans &trans &trans &trans &trans						&trans &trans &trans &trans &trans &trans
@@ -309,7 +312,7 @@
 									&trans &lts PINY DEL		&lts PINY ENTER &trans
 										&trans &trans		&trans &trans
 										&trans &trans		&trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans 
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
 			>;
 		};
 		
@@ -323,14 +326,14 @@
 														&trans &trans				&trans &trans
 															&trans &trans		&trans &trans
 															&trans &trans		&trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans 
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
 			>;
 		};
 
 		
 		numeric_layer {
 			bindings = <
-&to DEFAULT	&fm F19 F7		 &fm F17 F5 &fm F15 F3   &fm F13 F1	  &fm F21 F9	 				&fm F20 F8	&fm F14 F2	  &kp KP_DIVIDE &kp KP_MULTIPLY &kp GRAVE		 &fm F23 F11
+&trans	&fm F19 F7		 &fm F17 F5 &fm F15 F3   &fm F13 F1	  &fm F21 F9	 				&fm F20 F8	&fm F14 F2	  &kp KP_DIVIDE &kp KP_MULTIPLY &kp GRAVE		 &fm F23 F11
 &trans		&kp TAB			 &kp PG_UP  &kp UP       &kp PG_DN	  &kp LA(TAB)					&kp LA(N3)	&fm F7 LS(N1) &fm F8 LS(N6) &fm F9 LS(N5)	&fm F12 KP_MINUS &fm F24 F12
 &trans		&lts LCNUM ENTER &kp LEFT   &kp DOWN	 &kp RIGHT	  &kp LA(N1)					&kp RC(INS)	&fm F4 LS(N9) &fm F5 LS(N2) &fm F6 LS(N0)	&kp KP_PLUS		 &trans
 &trans		&trans			 &kp ESC	&kp RC(DEL)  &kp RC(BSPC) &kp LA(N2)					&kp	LS(INS)	&fm F1 LS(N4) &fm F2 LS(N8) &fm F3 LS(N3)	&kp ENTER		 &trans
@@ -338,14 +341,14 @@
 																	&trans &mo FN			&mo FN &trans
 																		&trans &mo FN	&mo FN &trans
 																		&trans &mo FN	&mo FN &trans
-&trans &trans &trans &trans &trans &trans &trans &trans 
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
 			>;
 		};
 		
 
 		numeric_layer_hd {
 			bindings = <
-&to DEFAULT_HD	&fm F21 F9	 &fm F15 F3	   &fm F13 F1	 &fm F17 F5		&fm F19 F7	 	  				&kp N7	&fm F14 F2	  &kp KP_DIVIDE &kp KP_MULTIPLY &kp GRAVE		 &fm F23 F11
+&trans	&fm F21 F9	 &fm F15 F3	   &fm F13 F1	 &fm F17 F5		&fm F19 F7	 	  				&kp N7	&fm F14 F2	  &kp KP_DIVIDE &kp KP_MULTIPLY &kp GRAVE		 &fm F23 F11
 &trans		&kp TAB			 &kp PG_UP  &kp UP       &kp PG_DN	  &kp LA(TAB)					&kp LA(N3)	&fm F7 LS(N5) &fm F8 LS(N0) &fm F9 LS(N1)	&fm F12 KP_MINUS &fm F24 F12
 &trans		&lts LCNUM ENTER &kp LEFT   &kp DOWN	 &kp RIGHT	  &kp LA(N1)					&kp RC(INS)	&fm F4 LS(N9) &fm F5 LS(N4) &fm F6 LS(N6)	&kp KP_PLUS		 &trans
 &trans		&trans			 &kp ESC	&kp RC(DEL)  &kp RC(BSPC) &kp LA(N2)					&kp	LS(INS)	&fm F1 LS(N3) &fm F2 LS(N7) &fm F3 LS(N2)	&kp ENTER		 &trans
@@ -353,7 +356,7 @@
 														&kp H &lts SPFN_HD BSPC					&lts SPFN_HD  ENTER &lts SPFN_HD SPACE
 																		&trans &kp DEL		&to DEFAULT_HD	&trans
 																		&trans &mo FN		&mo FN &trans
-&trans &trans &trans &trans &trans &trans &trans &trans 
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
 			>;
 		};
 		
@@ -368,7 +371,7 @@
 															&trans &trans			&trans &trans
 																&trans &trans	&trans &trans
 																&trans &trans	&trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans 
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
 			>;
 		};
 		
@@ -382,7 +385,7 @@
 									&trans &trans			&trans &trans
 										&trans &trans	&trans &trans
 										&trans &trans	&trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans 
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
 			>;
 		};			
 		
@@ -390,7 +393,7 @@
 		
 		numeric_layer_left {
 			bindings = <
-&to DEFAULT	&kp GRAVE		 &kp KP_MULTIPLY &kp KP_DIVIDE	&fm F14 F2	  &fm F21 F9 				&fm F20 F8	&fm F16 F4	 &fm F14 F2	 &fm F16 F4	  &fm F18 F6		 &fm F23 F11
+&trans	&kp GRAVE		 &kp KP_MULTIPLY &kp KP_DIVIDE	&fm F14 F2	  &fm F21 F9 				&fm F20 F8	&fm F16 F4	 &fm F14 F2	 &fm F16 F4	  &fm F18 F6		 &fm F23 F11
 &trans		&fm F12 KP_MINUS &fm F9 LS(N5)	 &fm F8 LS(N6)	&fm F7 LS(N1) &kp LA(TAB)				&kp LA(TAB)	&kp PG_UP	 &kp UP		 &kp PG_DN	  &kp TAB			 &fm F24 F12
 &trans		&kp KP_PLUS		 &fm F6 LS(N0)	 &fm F5 LS(N2)	&fm F4 LS(N9) &kp RC(INS)				&kp LA(N1)	&kp LEFT	 &kp DOWN	 &kp RIGHT	  &lts RCNUM_L ENTER &trans
 &trans		&kp ENTER		 &fm F3 LS(N3)	 &fm F2 LS(N8)	&fm F1 LS(N4) &kp LS(INS)				&kp LA(N2)  &kp RC(BSPC) &kp RC(DEL) &kp ESC	  &trans			 &trans
@@ -398,7 +401,7 @@
 																		&trans &mo FN_L			&mo FN_L &trans
 																			&trans &mo FN_L	&mo FN_L &trans
 																			&trans &mo FN_L	&mo FN_L &trans
-&trans &trans &trans &trans &trans &trans &trans &trans 
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
 			>;
 		};
 	
@@ -406,7 +409,7 @@
 
 		numeric_layer_left_hd {
 			bindings = <
-&to DEFAULT	&kp GRAVE		 &kp KP_MULTIPLY &kp KP_DIVIDE	&fm F17 F5	  &fm F19 F7 				&fm F18 F6 &fm F14 F2	 &fn F10 N0 &fm F16 F4	 &fm F20 F8		 &fm F23 F11
+&trans	&kp GRAVE		 &kp KP_MULTIPLY &kp KP_DIVIDE	&fm F17 F5	  &fm F19 F7 				&fm F18 F6 &fm F14 F2	 &fn F10 N0 &fm F16 F4	 &fm F20 F8		 &fm F23 F11
 &trans		&fm F12 KP_MINUS &fm F9 LS(N1)	 &fm F8 LS(N0)	&fm F7 LS(N5) &kp LA(TAB)				&kp LA(TAB)	&kp PG_UP	 &kp UP		 &kp PG_DN	  &kp TAB			 &fm F24 F12
 &trans		&kp KP_PLUS		 &fm F6 LS(N6)	 &fm F5 LS(N4)	&fm F4 LS(N9) &kp RC(INS)				&kp LA(N1)	&kp LEFT	 &kp DOWN	 &kp RIGHT	  &lts RCNUM_L ENTER &trans
 &trans		&kp ENTER		 &fm F3 LS(N2)	 &fm F2 LS(N7)	&fm F1 LS(N3) &kp LS(INS)				&kp LA(N2)  &kp RC(BSPC) &kp RC(DEL) &kp ESC	  &trans			 &trans
@@ -414,7 +417,7 @@
 																		&trans &mo FN_L			&mo FN_L &trans
 																			&trans &mo FN_L	&mo FN_L &trans
 																			&trans &mo FN_L	&mo FN_L &trans
-&trans &trans &trans &trans &trans &trans &trans &trans 
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
 			>;
 		};
 		
@@ -428,7 +431,7 @@
 								&trans &trans			&trans &trans
 									&trans &trans	&trans &trans
 									&trans &trans	&trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans 
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
 			>;
 		};
 		
@@ -442,7 +445,7 @@
 													&trans &trans			&trans &trans
 														&trans &trans	&trans &trans
 														&trans &trans	&trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans 
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
 			>;
 		};
 			
@@ -451,7 +454,7 @@
 		spacefn_layer {
 			bindings = <
 // &to DEFAULT	&fm F13 F1	   &fm F14 F2 &fm F15 F3   &fm F16 F4	 &fm F17 F5						  &fm F18 F6  &fm F19 F7   &fm F20 F8   &fm F21 F9 &fm F22 F10	 &fm F23 F11
-&to DEFAULT	&fm F19 F7	   &fm F17 F5 &fm F15 F3   &fm F13 F1	 &fm F21 F9						&fm F20 F8	  &fm F22 F10  &fm F14 F2   &fm F16 F4 &fm F18 F6    &fm F23 F11
+&trans	&fm F19 F7	   &fm F17 F5 &fm F15 F3   &fm F13 F1	 &fm F21 F9						&fm F20 F8	  &fm F22 F10  &fm F14 F2   &fm F16 F4 &fm F18 F6    &fm F23 F11
 &trans 		&kp TAB		   &kp PG_UP  &kp UP       &kp PG_DN	 &kp LA(TAB)					&kp LA(TAB) &kp PG_UP	   &kp UP 	    &kp PG_DN  &kp TAB		 &fm F24 F12
 &trans 		&hm RCTRL HOME &kp LEFT   &kp DOWN     &kp RIGHT	 &kp END						&kp HOME 	  &kp LEFT	   &kp DOWN     &kp RIGHT  &hm RCTRL END &kp NON_US_BSLH
 &trans		&kp ENTER	   &hms LALT ESC	&hm LSHFT RC(DEL)  &hms RCTRL RC(BSPC)  &kp BSPC			&kp BSPC	  &hms RCTRL RC(BSPC) &hm LSHFT RC(DEL)  &hms LALT ESC	   &kp ENTER	 &trans
@@ -459,7 +462,7 @@
 																&trans &lts MOUSE INS		&lts MOUSE ENTER &trans
 																	&trans &kp INT1		&kp INT1 &trans
 																	&trans &kp INT2		&kp INT2 &trans
-&trans &trans &trans &trans &trans &trans &trans &trans 
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
 			>;
 		};
 		
@@ -467,7 +470,7 @@
 
 		spacefn_layer_hd {
 			bindings = <
-&to DEFAULT	&fm F21 F9	 &fm F15 F3	  &fm F13 F1	&fm F17 F5 	&fm F19 F7	    				 &fm F18 F6  &fm F14 F2	 &fm F22 F10 	  &fm F16 F4 &fm F20 F8    &fm F23 F11
+&trans	&fm F21 F9	 &fm F15 F3	  &fm F13 F1	&fm F17 F5 	&fm F19 F7	    				 &fm F18 F6  &fm F14 F2	 &fm F22 F10 	  &fm F16 F4 &fm F20 F8    &fm F23 F11
 &trans 		&kp TAB		   &kp PG_UP  &kp UP       &kp PG_DN	 &kp LA(TAB)					&kp LA(TAB) &kp PG_UP	   &kp UP 	    &kp PG_DN  &kp TAB		 &fm F24 F12
 &trans 		&hm RCTRL HOME &kp LEFT   &kp DOWN     &kp RIGHT	 &kp END						&kp HOME 	  &kp LEFT	   &kp DOWN     &kp RIGHT  &hm RCTRL END &kp NON_US_BSLH
 &trans		&kp ENTER	   &hms LALT ESC	&hm LSHFT RC(DEL)  &hms RCTRL RC(BSPC)  &kp BSPC			&kp BSPC	  &hms RCTRL RC(BSPC) &hm LSHFT RC(DEL)  &hms LALT ESC	   &kp ENTER	 &trans
@@ -475,13 +478,13 @@
 																&trans &lts MOUSE INS		&lts MOUSE ENTER &trans
 																	&trans &kp INT1		&kp INT1 &trans
 																	&trans &kp INT2		&kp INT2 &trans
-&trans &trans &trans &trans &trans &trans &trans &trans 
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
 			>;
 		};
 		
 		mouse_layer {
 			bindings = <
-&to DEFAULT	&trans &trans			&trans			 &trans			   &trans					&trans &trans			&trans		  	 &trans			   &trans &trans
+&trans	&trans &trans			&trans			 &trans			   &trans					&trans &trans			&trans		  	 &trans			   &trans &trans
 &trans 		&trans &trans			&kp LG(RC(UP))	 &trans			   &trans					&trans &trans			&kp RG(RC(UP))   &trans			   &trans &trans
 &trans 		&trans &kp LG(RC(LEFT)) &kp LG(RC(DOWN)) &kp LG(RC(RIGHT)) &trans					&trans &kp RG(RC(LEFT))	&kp RG(RC(DOWN)) &kp RG(RC(RIGHT)) &trans &trans
 &trans 		&trans &trans			&trans			 &trans			   &trans					&trans &trans			&trans		  	 &trans			   &trans &trans
@@ -489,7 +492,7 @@
 																&trans &trans			&trans &trans
 																	&trans &trans	&trans &trans
 																	&trans &trans	&trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans 
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
 			>;
 		};
 		
@@ -503,7 +506,7 @@
 														&kp C_AL_SELECT_TASK &kp INS			&kp C_AC_HOME &kp C_AC_BACK
 																	&tog SPFN	&tog NUM	&tog NUM   &tog SPFN
 																	&bootloader &tog NUM_L	&tog NUM_L &reset 
-&trans &trans &trans &trans &trans &trans &trans &trans 
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
 			>;
 		};
 
@@ -519,7 +522,7 @@
 														&kp C_AL_SELECT_TASK &kp INS					&kp C_AC_HOME &kp C_AC_BACK
 																	&tog SPFN_HD	&tog NUM_HD		&tog NUM_HD   &tog SPFN_HD
 																&bootloader 	&tog NUM_L_HD		&tog NUM_L_HD &reset 
-&trans &trans &trans &trans &trans &trans &trans &trans 
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
 			>;
 		};
 
